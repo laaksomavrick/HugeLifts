@@ -14,16 +14,23 @@ struct NavigationView: View {
     var body: some View {
         TabView {
             Tab("Today", systemImage: "tray.and.arrow.down.fill") {
+                TodayView()
                }
 
 
                Tab("Workouts", systemImage: "tray.and.arrow.up.fill") {
+                   WorkoutsView()
                }
 
 
                Tab("Exercises", systemImage: "person.crop.circle.fill") {
+                   ExercisesView()
                }
         }
     }
     
+}
+
+#Preview {
+    NavigationView()
 }
